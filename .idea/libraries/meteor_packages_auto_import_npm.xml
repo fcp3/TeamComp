@@ -36,8 +36,6 @@
         <item url="file://$USER_HOME$/.meteor/packages/logging/1.1.15/npm/node_modules/cli-color/lib/_xterm-match.js" />
         <item url="file://$USER_HOME$/.meteor/packages/logging/1.1.15/npm/node_modules/cli-color/lib/throbber.js" />
         <item url="file://$USER_HOME$/.meteor/packages/logging/1.1.15/npm/node_modules/cli-color/lib/_xterm-colors.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-css/1.2.14/npm/node_modules/css-parse/index.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-css/1.2.14/npm/node_modules/css-stringify/index.js" />
         <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.2.14/npm/node_modules/async/lib/async.js" />
         <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.2.14/npm/node_modules/cliui/index.js" />
         <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.2.14/npm/node_modules/yargs/index.js" />
@@ -1527,8 +1525,10 @@
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/mkdirp/index.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/mkdirp/bin/cmd.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/babylon/bin/babylon.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-css/1.1.13/npm/node_modules/css-parse/index.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/babylon/lib/index.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/babylon/lib/options.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-css/1.1.13/npm/node_modules/css-stringify/index.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/babylon/lib/util/location.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/babylon/lib/util/whitespace.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/babylon/lib/util/identifier.js" />
@@ -4951,8 +4951,6 @@
       <root url="file://$USER_HOME$/.meteor/packages/logging/1.1.15/npm/node_modules/cli-color/lib/_xterm-match.js" />
       <root url="file://$USER_HOME$/.meteor/packages/logging/1.1.15/npm/node_modules/cli-color/lib/throbber.js" />
       <root url="file://$USER_HOME$/.meteor/packages/logging/1.1.15/npm/node_modules/cli-color/lib/_xterm-colors.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-css/1.2.14/npm/node_modules/css-parse/index.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-css/1.2.14/npm/node_modules/css-stringify/index.js" />
       <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.2.14/npm/node_modules/async/lib/async.js" />
       <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.2.14/npm/node_modules/cliui/index.js" />
       <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.2.14/npm/node_modules/yargs/index.js" />
@@ -6442,8 +6440,10 @@
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/mkdirp/index.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/mkdirp/bin/cmd.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/babylon/bin/babylon.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-css/1.1.13/npm/node_modules/css-parse/index.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/babylon/lib/index.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/babylon/lib/options.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-css/1.1.13/npm/node_modules/css-stringify/index.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/babylon/lib/util/location.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/babylon/lib/util/whitespace.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/babylon/lib/util/identifier.js" />
