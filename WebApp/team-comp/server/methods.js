@@ -8,4 +8,11 @@ Meteor.methods({
     EnemyTeam.remove({});
   },
 
+  setEnemyTeam(enemyHero) {
+    EnemyTeam.insert({
+      _id: new Mongo.ObjectID(),
+      name: enemyHero,
+    });
+  },
+
 });
