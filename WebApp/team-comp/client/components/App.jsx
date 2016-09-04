@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-import EnemyTeamSelect from './EnemyTeamSelect.jsx'
+import EnemyTeamSelect from './EnemyTeamSelect.jsx';
+import MainHeroSubmit from './MainHeroDB/MainHeroSubmit.jsx';
 
-export default class App extends React.Component {
+export default class App extends Component {
 
   render() {
     return (
