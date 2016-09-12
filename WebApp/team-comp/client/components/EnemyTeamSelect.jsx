@@ -8,28 +8,25 @@ EnemyTeam = new Mongo.Collection("enemyTeam");
 
 export default class EnemyTeamSelect extends TrackerReact(Component) {
 
-  setEnemy(event) {
+  processEnemy(event) {
     event.preventDefault();
     console.log('setting Enemy Team');
     var enemyPlayer1 = this.refs.enemyPlayer1.value.trim();
     var enemyPlayer2 = this.refs.enemyPlayer2.value.trim();
     var enemyPlayer3 = this.refs.enemyPlayer3.value.trim();
-    var enemyTeam = [enemyPlayer1, enemyPlayer2, enemyPlayer3];
+    var enemyPlayer4 = this.refs.enemyPlayer4.value.trim();
+    var enemyPlayer5 = this.refs.enemyPlayer5.value.trim();
+    var enemyPlayer6 = this.refs.enemyPlayer6.value.trim();
+
+    var enemyTeam = [enemyPlayer1, enemyPlayer2, enemyPlayer3, enemyPlayer4, enemyPlayer5, enemyPlayer6];
     console.log(enemyTeam);
-
-    Meteor.call('resetEnemy');
-
-    for( i = 0; i < enemyTeam.length; i++) {
-      var enemyHero = enemyTeam[i];
-      Meteor.call('setEnemyTeam', enemyHero);
-    }
+    
+    
   }
 
   listHeroes() {
     return Heroes.find().fetch();
   }
-
-
   
   render() {
 
@@ -51,15 +48,34 @@ export default class EnemyTeamSelect extends TrackerReact(Component) {
             </select>
 
             <select ref="enemyPlayer3">
+            {this.listHeroes().map( (hero) =>{
+              return <HeroListItem key={hero._id._str} heroItem={hero} />
+            })}
+            </select>
+
+            <select ref="enemyPlayer4">
               {this.listHeroes().map( (hero) =>{
                 return <HeroListItem key={hero._id._str} heroItem={hero} />
               })}
             </select>
+
+            <select ref="enemyPlayer5">
+              {this.listHeroes().map( (hero) =>{
+                return <HeroListItem key={hero._id._str} heroItem={hero} />
+              })}
+            </select>
+
+            <select ref="enemyPlayer6">
+              {this.listHeroes().map( (hero) =>{
+                return <HeroListItem key={hero._id._str} heroItem={hero} />
+              })}
+            </select>
+
           </div>
 
           <br />
           
-          <input type="button" onClick={this.setEnemy.bind(this)} value="Submit" />
+          <input type="button" onClick={this.processEnemy.bind(this)} value="Submit" />
         </form>
       </div>
     )

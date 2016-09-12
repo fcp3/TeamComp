@@ -1,7 +1,3 @@
-Heroes = new Mongo.Collection("heroes");
-EnemyTeam = new Mongo.Collection("enemyTeam");
-UserTeam = new Mongo.Collection("userTeam");
-
 Meteor.methods({
 
   resetEnemy() {
@@ -11,15 +7,37 @@ Meteor.methods({
     
   },
 
-  setEnemyTeam(enemyHero) {
+  setEnemyTeam(enemyArray) {
+    var teamID = new Mongo.ObjectID();
 
     EnemyTeam.insert({
       _id: new Mongo.ObjectID(),
-      name: enemyHero,
+      teamID: teamID._str,
+      enemyTeam: enemyArray,
     });
 
-    return;
+    // for( i = 0; i < enemyArray.length; i++) {
+    //
+    //   var enemyHero = enemyArray[i];
+    //   EnemyTeam.update({teamID: teamID._str},
+    //     {$push:
+    //       {enemyTeam: {
+    //         _id: new Mongo.ObjectID(),
+    //         enemyPlayer: enemyHero,
+    //       }}
+    //   });
+    //
+    // }
 
+    Meteor.call('returnEnemyTeam', teamID);
+
+    return teamID;
+
+  },
+
+  returnEnemyTeam(enemyID) {
+    console.log('testing returnEnemyTeam');
+    console.log(EnemyTeam.find({teamID: enemyID}).enemyTeam);
   },
 
   resetHeroes() {
@@ -171,6 +189,6 @@ Meteor.methods({
       Meteor.call('addCounter', 'Ana', 'Reaper');
       Meteor.call('addCounter', 'Ana', 'Tracer');
 
-  }
+  },
 
 });
